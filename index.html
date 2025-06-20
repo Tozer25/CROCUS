@@ -24,47 +24,46 @@
       margin: 0;
       font-size: 2.5rem;
     }
-    .navbar {
+    nav.navbar {
       background-color: #502f4c;
-      overflow: hidden;
       padding: 0 1rem;
-      font-family: Georgia, serif;
     }
-    .navbar ul {
-      list-style-type: none;
+    nav.navbar ul {
+      list-style: none;
       margin: 0;
       padding: 0;
       display: flex;
     }
-    .navbar li {
+    nav.navbar li {
       position: relative;
     }
-    .navbar a {
+    nav.navbar a {
       display: block;
-      color: white;
-      text-decoration: none;
+      color: #fff;
       padding: 1rem;
+      text-decoration: none;
     }
-    .navbar a:hover {
+    nav.navbar a:hover {
       background-color: #6b4a69;
+    }
+    nav.navbar .dropdown:hover .dropdown-content {
+      display: block;
     }
     .dropdown-content {
       display: none;
       position: absolute;
       background-color: #f9f8f6;
-      min-width: 200px;
       box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
       z-index: 1;
     }
-    .dropdown-content li a {
+    .dropdown-content a {
       color: #502f4c;
       padding: 0.75rem 1rem;
-    }
-    .dropdown-content li a:hover {
-      background-color: #ddd;
-    }
-    .dropdown:hover .dropdown-content, .dropdown:focus-within .dropdown-content { display: block; }
       display: block;
+      text-decoration: none;
+    }
+    .dropdown-content a:hover {
+      background-color: #ddd;
     }
     section {
       max-width: 800px;
@@ -112,7 +111,7 @@
       <li><a href="index.html">Home</a></li>
       <li class="dropdown">
         <a href="#">Explore ▾</a>
-        <ul class="dropdown-content" style="display: none; position: absolute; top: 100%; left: 0; background-color: #f9f8f6; min-width: 200px; box-shadow: 0px 8px 16px rgba(0,0,0,0.2); z-index: 1;">
+        <ul class="dropdown-content">
           <li><a href="comprehensive-depravity.html">Comprehensive Depravity</a></li>
           <li><a href="ruin-to-restoration.html">Ruin to Restoration</a></li>
           <li><a href="outworked-salvation.html">Outworked Salvation</a></li>
@@ -129,7 +128,7 @@
     <h2>What is CROCUS?</h2>
     <p>
       The Six Points of CROCUS present a historically Reformed, monergistic soteriological framework.
-      It is similar to TULIP but introduces several important distinctions. While TULIP remains a widely used summary of Reformed soteriology, its terminology is often revised even by its own proponents due to potential misunderstandings. CROCUS seeks to express the historic Reformed view of salvation with greater theological precision and a practical, pastoral emphasis. It also offers a more faithful reflection of the Canons of Dort regarding the atonement and accommodates both high and moderate views. In doing so, it honors the rich history and diversity of the Reformed tradition.
+      It is similar to TULIP but introduces several important distinctions. While TULIP remains a widely used summary of Reformed soteriology, its terminology is often revised even by its own proponents due to potential misunderstandings. CROCUS seeks to express the historic Reformed view of salvation with greater theological precision and a practical, pastoral emphasis. It also offers a more faithful reflection of the Canons of Dort regarding the atonement and accommodates both high and moderate views.
     </p>
 
     <h2>The Six Points of CROCUS</h2>
