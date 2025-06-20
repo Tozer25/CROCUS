@@ -24,9 +24,9 @@
       margin: 0;
       font-size: 2.5rem;
     }
+
     nav.navbar {
       background-color: #502f4c;
-      padding: 0 1rem;
     }
     nav.navbar ul {
       list-style: none;
@@ -39,36 +39,35 @@
     }
     nav.navbar a {
       display: block;
-      color: #fff;
-      padding: 1rem;
+      color: white;
       text-decoration: none;
+      padding: 1rem;
     }
     nav.navbar a:hover {
       background-color: #6b4a69;
     }
-    nav.navbar .dropdown:hover .dropdown-content {
-      background-color: #502f4c;
-      display: none;
-      display: block;
-    }
-    .dropdown-content {
-      background-color: #502f4c;
-      display: none;
+
+    /* Dropdown hidden by default */
+    nav.navbar li ul.dropdown-content {
       display: none;
       position: absolute;
-      background-color: #f9f8f6;
-      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      top: 100%;
+      left: 0;
+      background-color: #502f4c;
+      min-width: 200px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
       z-index: 1;
     }
-    .dropdown-content a {
-      color: #502f4c;
-      padding: 0.75rem 1rem;
+
+    /* Show dropdown only on hover */
+    nav.navbar li:hover > ul.dropdown-content {
       display: block;
-      text-decoration: none;
     }
-    .dropdown-content a:hover {
-      background-color: #ddd;
+
+    .dropdown-content li a {
+      padding: 0.75rem 1rem;
     }
+
     section {
       max-width: 800px;
       margin: 2rem auto;
@@ -113,7 +112,7 @@
   <nav class="navbar">
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li class="dropdown">
+      <li>
         <a href="#">Explore ▾</a>
         <ul class="dropdown-content">
           <li><a href="details.html">Full Explanation</a></li>
