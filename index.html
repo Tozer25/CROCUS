@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,6 +23,48 @@
     header h1 {
       margin: 0;
       font-size: 2.5rem;
+    }
+    .navbar {
+      background-color: #502f4c;
+      overflow: hidden;
+      padding: 0 1rem;
+      font-family: Georgia, serif;
+    }
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    .navbar li {
+      position: relative;
+    }
+    .navbar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 1rem;
+    }
+    .navbar a:hover {
+      background-color: #6b4a69;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f8f6;
+      min-width: 200px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .dropdown-content li a {
+      color: #502f4c;
+      padding: 0.75rem 1rem;
+    }
+    .dropdown-content li a:hover {
+      background-color: #ddd;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
     }
     section {
       max-width: 800px;
@@ -63,6 +106,23 @@
     <h1>The Six Points of CROCUS</h1>
     <p>A Historically Reformed Soteriology</p>
   </header>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#">Explore ▾</a>
+        <ul class="dropdown-content">
+          <li><a href="comprehensive-depravity.html">Comprehensive Depravity</a></li>
+          <li><a href="ruin-to-restoration.html">Ruin to Restoration</a></li>
+          <li><a href="outworked-salvation.html">Outworked Salvation</a></li>
+          <li><a href="conquering-grace.html">Conquering Grace</a></li>
+          <li><a href="unconditional-election.html">Unconditional Election</a></li>
+          <li><a href="secured-redemption.html">Secured Redemption</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 
   <section>
     <h2>What is CROCUS?</h2>
@@ -118,14 +178,6 @@
     <p>
       The crocus flower has long been considered a symbol of hope, joy, and new life. It is one of the first flowers to bloom every year and often pushes up through the snow, announcing the end of winter and the beginning of spring. It is a wonderful illustration of spiritual rebirth and the new life believers have in Christ.
     </p>
-    <div style="text-align: center; margin-top: 1.5rem;">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Crocus_vernus_purple_flowers_in_snow.jpg" 
-           alt="Crocus flower blooming through the snow" 
-           style="max-width: 100%; height: auto; border-radius: 12px;" />
-      <p style="font-size: 0.9rem; color: #555; margin-top: 0.5rem;">
-        A crocus flower blooming through snow — a symbol of new life.
-      </p>
-    </div>
 
     <div class="bible-verse">
       “Salvation belongs to the LORD.” — Jonah 2:9
