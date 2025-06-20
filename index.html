@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Six Points of CROCUS - In Depth</title>
+  <title>The Six Points of CROCUS</title>
   <style>
     body {
       font-family: Georgia, serif;
@@ -24,26 +24,47 @@
       margin: 0;
       font-size: 2.5rem;
     }
-    nav.toc {
-      background-color: #eee;
-      padding: 1rem;
-      max-width: 800px;
-      margin: 2rem auto;
-      border-radius: 8px;
+    .navbar {
+      background-color: #502f4c;
+      overflow: hidden;
+      padding: 0 1rem;
+      font-family: Georgia, serif;
     }
-    nav.toc h2 {
-      margin-top: 0;
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
     }
-    nav.toc ul {
-      list-style: none;
-      padding-left: 0;
+    .navbar li {
+      position: relative;
     }
-    nav.toc ul li {
-      margin: 0.5rem 0;
-    }
-    nav.toc a {
-      color: #502f4c;
+    .navbar a {
+      display: block;
+      color: white;
       text-decoration: none;
+      padding: 1rem;
+    }
+    .navbar a:hover {
+      background-color: #6b4a69;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f8f6;
+      min-width: 200px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .dropdown-content li a {
+      color: #502f4c;
+      padding: 0.75rem 1rem;
+    }
+    .dropdown-content li a:hover {
+      background-color: #ddd;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
     }
     section {
       max-width: 800px;
@@ -52,7 +73,25 @@
     }
     h2 {
       color: #502f4c;
-      margin-top: 2.5rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    table, th, td {
+      border: 1px solid #bbb;
+    }
+    th, td {
+      padding: 0.75rem;
+      text-align: left;
+    }
+    .bible-verse {
+      text-align: center;
+      font-size: 1.25rem;
+      font-style: italic;
+      margin-top: 3rem;
+      color: #502f4c;
     }
     footer {
       text-align: center;
@@ -63,57 +102,67 @@
   </style>
 </head>
 <body>
-
   <header>
     <h1>The Six Points of CROCUS</h1>
-    <p>In-Depth Explanation</p>
+    <p>A Historically Reformed Soteriology</p>
   </header>
 
-  <nav class="toc">
-    <h2>Contents</h2>
+  <nav class="navbar">
     <ul>
-      <li><a href="#comprehensive-depravity">Comprehensive Depravity</a></li>
-      <li><a href="#ruin-to-restoration">Ruin to Restoration</a></li>
-      <li><a href="#outworked-salvation">Outworked Salvation</a></li>
-      <li><a href="#conquering-grace">Conquering Grace</a></li>
-      <li><a href="#unconditional-election">Unconditional Election</a></li>
-      <li><a href="#secured-redemption">Secured Redemption</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#">Explore ▾</a>
+        <ul class="dropdown-content">
+          <li><a href="comprehensive-depravity.html">Comprehensive Depravity</a></li>
+          <li><a href="ruin-to-restoration.html">Ruin to Restoration</a></li>
+          <li><a href="outworked-salvation.html">Outworked Salvation</a></li>
+          <li><a href="conquering-grace.html">Conquering Grace</a></li>
+          <li><a href="unconditional-election.html">Unconditional Election</a></li>
+          <li><a href="secured-redemption.html">Secured Redemption</a></li>
+          <li><a href="details.html">Full Explanation</a></li>
+        </ul>
+      </li>
     </ul>
   </nav>
 
-  <section id="comprehensive-depravity">
-    <h2>Comprehensive Depravity</h2>
-    <p>[Your explanation here]</p>
-  </section>
+  <section>
+    <h2>What is CROCUS?</h2>
+    <p>
+      The Six Points of CROCUS present a historically Reformed, monergistic soteriological framework.
+      It is similar to TULIP but introduces several important distinctions...
+    </p>
 
-  <section id="ruin-to-restoration">
-    <h2>Ruin to Restoration</h2>
-    <p>[Your explanation here]</p>
-  </section>
+    <h2>The Six Points of CROCUS</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Letter</th>
+          <th>Doctrine</th>
+          <th>Summary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>C</td><td>Comprehensive Depravity</td><td>All human faculties are corrupted...</td></tr>
+        <tr><td>R</td><td>Ruin to Restoration</td><td>Adam's fall ruined us...</td></tr>
+        <tr><td>O</td><td>Outworked Salvation</td><td>God's grace sustains us...</td></tr>
+        <tr><td>C</td><td>Conquering Grace</td><td>God effectually calls...</td></tr>
+        <tr><td>U</td><td>Unconditional Election</td><td>God’s choice is not based on...</td></tr>
+        <tr><td>S</td><td>Secured Redemption</td><td>Christ's work guarantees...</td></tr>
+      </tbody>
+    </table>
 
-  <section id="outworked-salvation">
-    <h2>Outworked Salvation</h2>
-    <p>[Your explanation here]</p>
-  </section>
+    <h2>Why the Crocus?</h2>
+    <p>
+      The crocus flower has long been considered a symbol of hope, joy, and new life...
+    </p>
 
-  <section id="conquering-grace">
-    <h2>Conquering Grace</h2>
-    <p>[Your explanation here]</p>
-  </section>
-
-  <section id="unconditional-election">
-    <h2>Unconditional Election</h2>
-    <p>[Your explanation here]</p>
-  </section>
-
-  <section id="secured-redemption">
-    <h2>Secured Redemption</h2>
-    <p>[Your explanation here]</p>
+    <div class="bible-verse">
+      “Salvation belongs to the LORD.” — Jonah 2:9
+    </div>
   </section>
 
   <footer>
     &copy; 2025 The CROCUS Project. All Rights Reserved.
   </footer>
-
 </body>
 </html>
