@@ -33,6 +33,7 @@
       margin: 0;
       padding: 0;
       display: flex;
+      flex-wrap: wrap;
     }
     nav.navbar li {
       position: relative;
@@ -47,7 +48,6 @@
       background-color: #6b4a69;
     }
 
-    /* Dropdown hidden by default */
     nav.navbar li ul.dropdown-content {
       display: none;
       position: absolute;
@@ -59,7 +59,6 @@
       z-index: 1;
     }
 
-    /* Show dropdown only on hover */
     nav.navbar li:hover > ul.dropdown-content {
       display: block;
     }
@@ -100,6 +99,22 @@
       padding: 2rem;
       background-color: #f1f1f1;
       color: #777;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      section {
+        margin: 1rem;
+        padding: 0.5rem;
+      }
+      .bible-verse {
+        font-size: 1rem;
+      }
+      nav.navbar ul {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
